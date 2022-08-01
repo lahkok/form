@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Kepuasan Pelanggan</h1>
+    <p id="description">Terimakasih telah mengisi survey form</p>
+    <form id="survey-form">
+      <label for="nama" id="name-label"
+        >Masukan Nama Anda:
+        <input
+          type="text"
+          id="nama"
+          value="name"
+          placeholder="Masukan Nama Anda"
+          required
+        />
+      </label>
+      <label for="email" id="email-label"
+        >Masukan Email Anda:
+        <input
+          type="email"
+          id="email"
+          placeholder="Masukan Email Anda"
+          required
+        />
+      </label>
+      <label for="number" id="number-label"
+        >Masukan Umur Anda:
+        <input
+          type="number"
+          id="number"
+          min="15"
+          max="50"
+          placeholder="Masukkan Umur anda"
+          required
+        />
+      </label>
+      <label for="pilihan"
+        >Darimana anda mengetahui aplikasi ini?
+        <select id="dropdown">
+          <option value="">Pilih salah satu</option>
+          <option value="">Iklan</option>
+          <option value="">Rekomendasi teman</option>
+          <option value="">Lainnya</option>
+        </select>
+      </label>
+      <label for="pilih">
+        Pilih profesi anda
+        <br /><input
+          type="radio"
+          name="pekerjaan"
+          value="satu"
+          checked
+        />Pegawai <br />
+        <input type="radio" name="pekerjaan" value="satu" />Pelajar <br />
+        <input type="radio" name="pekerjaan" value="dua" />Guru <br />
+        <input type="radio" name="pekerjaan" value="tiga" />Lainnya <br />
+      </label>
+      <label for="kotak">
+        Fitur yang paling anda sukai dari aplikasi ini
+        <br /><input
+          type="checkbox"
+          id="kotak"
+          name="centang"
+          value="satu"
+        />aaaaaa<br />
+        <input
+          type="checkbox"
+          id="kotak"
+          name="centang"
+          value="dua"
+        />bbbbbbb<br />
+      </label>
+      <label for="komentar"
+        >Silahkan masukan komentar anda
+        <textarea name="komen" id="komentar" cols="30" rows="10"> </textarea>
+      </label>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
